@@ -19,13 +19,3 @@ function callApi($url,$method){
   $resultInArray = json_decode($response, true);
   return $resultInArray;
 }
-
-
-// $array = callApi('https://api.themoviedb.org/3/movie/popular?api_key=37ef0f35df83c6eb8ed109a42fc6d7a3','GET');
-// foreach ($array as $a ){
-//     foreach ($a as $aa ){
-//         echo $aa['title'].'<br>';
-//         echo '<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/'.$aa['poster_path'].'"><br>';
-      
-//     }
-// }
