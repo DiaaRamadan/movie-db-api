@@ -25,9 +25,9 @@ include 'call.php';
         						echo "</div>";
         						echo "</div>";
         						?>
-        						<form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
-								<input type="text" name="value" placeholder="Rate Value" required="required">
-								<input type="text" name="session_id" hidden="hidden" value="<?php echo $_SESSION['G_session']?>">
+        						<form method="POST" action="https://api.themoviedb.org/3/movie/<?php echo $aa['id'] ?>/rating?api_key=37ef0f35df83c6eb8ed109a42fc6d7a3&guest_session_id=<?php echo $_SESSION['G_session']?>">
+
+								<input type="text" name="value" placeholder="Value">
 								<input type="submit" value="login">
 							</form>
         						<?php
@@ -39,5 +39,15 @@ include 'call.php';
 	</div>
 </div>
 <?php
+if($_GET['page']=='movie_rate'){
+	if(isset($_POST['value']) && isset($_POST['session_id']) && isset($_POST['movie_id'])){
+		$url = 'https://api.themoviedb.org/3/movie/'.$_POST['movie_id'].'/rating?api_key=37ef0f35df83c6eb8ed109a42fc6d7a3&guest_session_id='.$_POST['session_id'].'';
+		echo $url;
+		$array = callApi($url, 'post');
+		print_r($array);
+	}
+}
+
+
 include 'footer.php';
 ?>

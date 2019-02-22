@@ -4,8 +4,8 @@ $pagename = 'Most popular';
 include 'header.php';
 include 'nav.php';
 include 'call.php';
-
 ?>
+
 <h1 class="text-center">Top Rate</h1>
 <div class="container">
 	<div class="row">
