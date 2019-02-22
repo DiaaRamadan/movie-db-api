@@ -1,4 +1,5 @@
 <?php
+session_start();
 $pagename = 'Most popular';
 include 'header.php';
 include 'nav.php';
@@ -38,6 +39,13 @@ include 'call.php';
         							echo "<a href='youtube.php?videoKey=".$key."'>Trailer</a>";
         						echo "</div>";
         						echo "</div>";
+                                ?>
+                                <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
+                                <input type="text" class="form-control" name="value" placeholder="Rate Value" required="required">
+                                <input type="text" name="session_id" hidden="hidden" value="<?php echo $_SESSION['G_session']?>">
+                                <input type="submit" class='btn btn-primary' value="login">
+                            </form>
+                                <?php
         					echo "</div>";
         				}
     				}

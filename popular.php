@@ -1,4 +1,5 @@
 <?php
+session_start();
 $pagename = 'Most popular';
 include 'header.php';
 include 'nav.php';
@@ -23,6 +24,13 @@ include 'call.php';
         							echo '<p class="pull-right">Votes: '.$aa['vote_count'].'</p><br>';
         						echo "</div>";
         						echo "</div>";
+        						?>
+        						<form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
+								<input type="text" name="value" placeholder="Rate Value" required="required">
+								<input type="text" name="session_id" hidden="hidden" value="<?php echo $_SESSION['G_session']?>">
+								<input type="submit" value="login">
+							</form>
+        						<?php
         					echo "</div>";
     				}
 				}
