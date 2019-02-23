@@ -1,7 +1,6 @@
 <?php
 $pagename = 'Search';
 include 'header.php';
-include 'nav.php';
 include 'call.php';
 $query = '';
 if(isset($_GET['query'])){
