@@ -12,7 +12,7 @@
 <!-- START PAGE SOURCE -->
 <div id="shell">
   <div id="header">
-    <h1 id="logo"><a href="#">MovieHunter</a></h1>
+    <h1 id="logo"><a href="">Movie DB API</a></h1>
     <div class="social"> <span>FOLLOW US ON:</span>
       <ul>
         <li><a class="twitter" href="#">twitter</a></li>
@@ -23,20 +23,20 @@
     </div>
     <div id="navigation">
       <ul>
-        <li><a class="active" href="#">HOME</a></li>
+        <li><a class="active" href="index.php">HOME</a></li>
         <li><a href="#">NEWS</a></li>
         <li><a href="#">IN THEATERS</a></li>
-        <li><a href="#">COMING SOON</a></li>
+        <li><a href="upcomming.php">COMING SOON</a></li>
         <li><a href="#">CONTACT</a></li>
         <li><a href="#">ADVERTISE</a></li>
       </ul>
     </div>
     <div id="sub-navigation">
       <ul>
-        <li><a href="#">SHOW ALL</a></li>
         <li><a href="index.php">NOW PLAYING</a></li>
         <li><a href="topRated.php">TOP RATED</a></li>
         <li><a href="popular.php">MOST POPULAR</a></li>
+         <li><a href="session.php">GUEST SESSION</a></li>
       </ul>
       <div id="search">
         <form action="search.php" method="get" accept-charset="utf-8">
