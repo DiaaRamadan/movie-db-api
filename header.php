@@ -26,7 +26,11 @@
         <li><a class="active" href="index.php">HOME</a></li>
         <li><a href="#">NEWS</a></li>
         <li><a href="#">IN THEATERS</a></li>
+<<<<<<< HEAD
         <li><a href="upcomming.php">UPCOMING</a></li>
+=======
+        <li><a href="upcomming.php">COMING SOON</a></li>
+>>>>>>> e26fd22255044cea3de5b3fd361b9eb992663550
         <li><a href="#">CONTACT</a></li>
         <li><a href="#">ADVERTISE</a></li>
       </ul>
