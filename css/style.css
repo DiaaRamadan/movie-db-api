@@ -361,3 +361,23 @@ h1#logo a {
 #footer .rf {
 	float:right;
 }
+/* my styl*/
+.Moptions{
+
+	margin-bottom: 5%;
+}
+.Moptions form{
+	display: inline;
+}
+.Moptions form input{
+
+	background: none;
+    color: #e7b038;
+    border: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #e7b038;
+}

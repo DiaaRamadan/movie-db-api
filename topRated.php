@@ -1,4 +1,5 @@
 <?php
+session_start();
 $pagename = 'Most popular';
 include 'header.php';
 include 'call.php';
@@ -41,6 +42,13 @@ include 'call.php';
                                           <div class="stars-in"> <?php echo $aa['vote_average'];?></div>
                                         </div>
                                         <span class="comments"><?php echo $aa['vote_count']?></span> </div>
+
+                                        <div class="Moptions">
+                                          <a href="rate.php?id=<?php echo $aa['id'] ?>" class=""> rating movie</a>
+                                          <form target="_blank" method="DELETE" action="https://api.themoviedb.org/3/movie/<?php echo $aa['id'] ?>/rating?api_key=37ef0f35df83c6eb8ed109a42fc6d7a3&guest_session_id=<?php echo $_SESSION['G_session']?>">
+                                            <input type="submit" value="Delete rate">
+                                          </form>
+                                        </div>
                                     </div>
                                     <div class="cl">&nbsp;</div>
                             <?php
